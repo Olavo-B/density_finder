@@ -30,7 +30,10 @@ def extract_bndbox(filename):
     # concat all instances into a list
     bndbox=[]
     for xmin,ymin,xmax,ymax in zip(xmin_values,ymin_values,xmax_values,ymax_values):
-        coord = (xmin.get_text(), ymin.get_text(), xmax.get_text(), ymax.get_text())
+        coord = (int(xmin.get_text()),
+                 int(ymin.get_text()),
+                 int(xmax.get_text()), 
+                 int(ymax.get_text()))
         bndbox.append(coord)
     
     return bndbox
