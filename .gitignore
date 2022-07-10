@@ -1,6 +1,7 @@
 **/sorghum_head_counting_dataset
 **/wheat_ears_counting_dataset
-
+**/template_kps/train/*.png
+**/template_kps/val/*.png
 *.zip
 
 
