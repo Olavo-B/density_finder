@@ -28,6 +28,10 @@ def generate_bndboxes(image, filename, bndbox):
         center      = ( xmin-((xmin-xmax)//2), ymin-((ymin - ymax)//2) )
         axes_lenght = ( (xmin-xmax)//2, (ymin-ymax)//2 )
 
+        center = (int(center[0]),int(center[1]))
+        axes_lenght = (int(axes_lenght[0]),int(axes_lenght[1]))
+
+
         cv2.ellipse(image,center,axes_lenght,0,0,360,color,-1)
 
     # Following line overlays transparent rectangle over the image

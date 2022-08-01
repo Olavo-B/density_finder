@@ -14,7 +14,13 @@ def count_bndbox(filename):
     return len(b_unique)
 
 def extract_bndbox(filename):
-    """get all bounding boxes coords from .xml file."""
+    """get all bounding boxes coords from .xml file.
+
+        Returns
+        --------
+        bbox : list to tuples where (x_min,y_min,x_man,y_min)
+    
+    """
     # open xml file
     with open(filename, 'r') as f:
         data = f.read()
