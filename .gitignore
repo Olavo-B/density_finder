@@ -3,6 +3,7 @@
 **/template_kps/train/*.png
 **/template_kps/val/*.png
 *.zip
+/Imagens/*
 
 
 # Byte-compiled / optimized / DLL files

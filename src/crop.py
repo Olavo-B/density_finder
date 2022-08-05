@@ -22,6 +22,11 @@ def crop_and_fill(img_path):
     '''
 
     img = cv.imread(img_path)
+    if img.shape == (6000,4000,3):
+        print('aqui')
+        img = cv.rotate(img, cv.ROTATE_90_CLOCKWISE)
+    
+
     all_image_crop = []
     h = 2000
 
